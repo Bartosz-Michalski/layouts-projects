@@ -54,8 +54,6 @@ body{
     background: rgb(43, 148, 197);
     opacity: 0.75;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
 }
 
 .left-menu ul{
