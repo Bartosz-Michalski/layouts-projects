@@ -4,66 +4,34 @@
 }
 
 body{
-    background: rgb(145, 142, 142);
-    color:#fff;
+    background: rgb(146, 165, 163);
+    color:black;
   }
 
-/* block */
+/* main-client */
 
-#block{
+#main-client{
     display: grid;
     grid-template-columns: 20% 30% 50%;
-    margin: 0 auto;
-    border: medium solid blue;
-
+    grid-auto-rows: minmax(100px, auto);
+    gap: 10px;
+    max-height: 94%;
+    max-width: 92%%;
+    margin: 3% 4%;
 }
 
-/* top menu */
-
-#top-menu ul{
-    list-style-type: none;
-    display: inline-block;
-    padding: 0;
-}
-
-#top-menu li{
-    display: inline-block;
-}
-
-#top-menu a{
-    text-decoration: none;
-    text-align: center;
-    color: #fff;
-    padding: 10px;
-    
-}
-
-/* left menu */
-
-.wrapper{
-    border: medium solid blue;
-}
-
-.left-menu{
-    background: rgb(43, 148, 197);
-    opacity: 0.75;
-    display: flex;
-}
-
-.left-menu ul{
-    list-style-type: none;
-    padding: 0;
-}
-
-.left-menu a{
-    text-decoration: none;
-    text-align: center;
-    font-weight: bold;
-    color: #fff;
-    display: block;
+#main-client section{
+    background: yellow;
     padding: 10px;
 }
 
-.left-menu a:hover{
-    background: rgb(76, 124, 146);
+#main-client section:nth-child(even){
+    background: rgb(60, 255, 0);
+    padding: 10px;
 }
+
+/* left-menu */
+
+/* middle-mails-list */
+
+/* right-mail-content */
