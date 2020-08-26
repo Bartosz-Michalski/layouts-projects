@@ -1,23 +1,21 @@
 *{
     font-family: Verdana, sans-serif;
+    box-sizing: border-box;
 }
 
 body{
-    background-image: url(../img/background1.jpeg);
-    background-size: 100%;
-    background-repeat: no-repeat;
+    background: rgb(145, 142, 142);
     color:#fff;
   }
 
 /* block */
 
 #block{
-    width: 100%;
-    max-width: 86%;
-    height: 100%;
-    max-height: 86%;
-    margin: 7%;
+    display: grid;
+    grid-template-columns: 20% 30% 50%;
+    margin: 0 auto;
     border: medium solid blue;
+
 }
 
 /* top menu */
@@ -43,11 +41,7 @@ body{
 /* left menu */
 
 .wrapper{
-    width: 100%;
-    max-width: 20%;
-    height: 100%;
     border: medium solid blue;
-    margin: 0;
 }
 
 .left-menu{
