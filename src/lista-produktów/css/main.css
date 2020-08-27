@@ -1,4 +1,8 @@
 /* ***** OTHER SETTINGS ***** */
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
@@ -6,11 +10,35 @@
 }
 
 body{
-    max-width: 1400px;
+    max-width: 1500px;
     margin: 0 auto;
-    background: rgb(168, 158, 149);
-    //background-image: linear-gradient(to left, rgb(199, 164, 131) 45%, rgb(185, 175, 142) 70%, rgb(238, 219, 184) 90%);
+    background: rgb(141, 103, 75);
     color: rgb(75, 74, 74);
+}
+
+/* ** to the top button *** */
+#to-the-top{
+    content: "\21D1";
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+    width: 48px;
+    height: 48px;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    opacity: .6;
+    border: white solid;
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+#to-the-top:hover{
+    color: rgb(75, 74, 74);
+    border: rgb(75, 74, 74) solid;
+    background: rgb(230, 199, 159);
 }
 
 /* ***** HEADER ***** */
@@ -57,7 +85,7 @@ u{
 }
 
 .login-cart img:hover{
-    background:  rgb(190, 189, 189);
+    background:  rgb(182, 129, 91);
     opacity: .7;
     align-items: center;
     height: 29px;
@@ -71,7 +99,6 @@ u{
     display: flex;
     flex-wrap: wrap;
     min-height: 80px;
-    //background-image: linear-gradient(to left, #777 55%,  rgb(116, 103, 92) 70%,  rgba(230, 228, 228));
     align-items: center;
     justify-content: flex-end;
 }
@@ -88,14 +115,14 @@ u{
 }
 
 #header-nav a:hover{
-    color: rgb(161, 90, 22);
-    border-bottom: rgb(161, 90, 22) solid;
+    color: rgb(255, 146, 44);
+    border-bottom: rgb(255, 146, 44) solid;
 }
 
 /* ** banner ** */
 #banner{
-    min-height: 300px;
-    background: url(../img/banner.webp) no-repeat center;
+    min-height: 500px;
+    background: url(../img/banner1.jpeg) no-repeat center;
     background-size: cover;
 }
 
@@ -108,6 +135,7 @@ u{
 }
 
 .category-name{
+    color: rgb(75, 74, 74);
     text-decoration: none;
     display: flex;
     font-size: 16px;
@@ -116,7 +144,6 @@ u{
     border: rgb(122, 122, 122) 4px;
     border-bottom-style: groove;
     border-left-style: groove;
-    //border-radius: 15%;
     width: 100%;
     min-height: 50px;
     margin: 20px 0;
@@ -124,8 +151,8 @@ u{
 }
 
 .category-name:hover{
-    color: rgb(161, 90, 22);
-    border-bottom: rgb(161, 90, 22) groove 4px;
+    color: rgb(255, 146, 44);
+    border-bottom: rgb(255, 146, 44) groove 4px;
 }
 
 .category-list{
@@ -148,7 +175,7 @@ article{
 }
 
 article:hover{
-    background:rgb(212, 188, 157);
+    background:rgb(230, 199, 159);
     margin: 10px;
     padding: 10px;
     width: 300px;
@@ -179,11 +206,6 @@ article img{
     margin: 0 auto;
     height: 200px;
     width: 200px;
-}
-
-.article img:hover{
-
-
 }
 
 .out-of-stock{
