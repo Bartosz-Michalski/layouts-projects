@@ -8,7 +8,6 @@
 body{
     max-width: 1300px;
     margin: 0 auto;
-    //background: #777;
     //background-image: linear-gradient(to left, #777 45%,  rgb(116, 103, 92) 70%,  rgba(230, 228, 228) 90%);
     background-image: linear-gradient(to left, rgb(146, 146, 146) 45%,  rgb(116, 110, 92) 70%,  rgba(230, 228, 228) 90%);
     color: rgb(75, 74, 74);
@@ -111,6 +110,7 @@ footer{
 #products-list{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
 }
 
@@ -154,7 +154,7 @@ article h2{
 
 /* ***** SCREENS ***** */
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1050px){
     body{
         background:#777;
     }
