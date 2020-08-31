@@ -40,13 +40,14 @@ body {
 
 #main-client section {
   background: rgb(198, 218, 149);
-  border:  rgb(42, 56, 17)solid;
-  padding: 10px;
+  border: rgb(35, 48, 13) solid;
+  padding: 10px 0;
 }
 
-#main-client .menu-side, #main-client .menu-top {
-  background: rgb(42, 56, 17);
-  border: rgb(80, 105, 35) solid;
+#main-client .menu-side,
+#main-client .menu-top {
+  background: rgb(36, 49, 14);
+  border: rgb(55, 75, 20) solid;
   color: white;
 }
 
@@ -61,12 +62,8 @@ body {
 
 .menu-side > * {
   height: 45px;
-  padding: 12px 20px;
-}
-
-.menu-side__item:hover {
-  background: rgb(80, 105, 35);
-  margin: 0;
+  padding: 5px 0 5px 10px;
+  position: relative;
 }
 
 .menu-side__logo {
@@ -74,6 +71,25 @@ body {
   width: 100%;
   padding: 0;
   align-self: center;
+}
+
+.menu-side__item img {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 20px;
+  width: 20px;
+}
+
+.menu-side__item p {
+  position: absolute;
+  top: 13px;
+  left: 40px;
+}
+
+.menu-side__item:hover {
+  background: rgb(80, 105, 35);
+  margin: 0;
 }
 
 /* ********** MENU-TOP ********** */
