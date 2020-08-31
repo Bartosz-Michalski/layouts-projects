@@ -1,37 +1,114 @@
-*{
-    font-family: Verdana, sans-serif;
-    box-sizing: border-box;
+* {
+  font-family: Verdana, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
 }
 
-body{
-    background: rgb(146, 165, 163);
-    color:black;
+body {
+  overflow: hidden;
+}
+
+#background {
+  background: url(../img/background.jpeg) no-repeat center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 0;
+  opacity: 0.9;
+}
+
+/* ********** MAIN-CLIENT ********** */
+
+#main-client {
+  display: grid;
+  grid-template-columns: 200px 1fr 1fr;
+  /* grid-auto-rows: minmax(100px, auto); */
+  grid-auto-rows: 85px 65px 1fr;
+  grid-template-areas:
+    "menu-side menu-top menu-top"
+    "menu-side mail-search mail-header"
+    "menu-side mail-list mail-content";
+  padding: 60px 80px;
+  opacity: 0.9;
+  min-height: 550px;
+  height: 100vh;
+  width: 100vw;
+}
+
+#main-client section {
+  background: rgb(198, 218, 149);
+  border:  rgb(42, 56, 17)solid;
+  padding: 10px;
+}
+
+#main-client .menu-side, #main-client .menu-top {
+  background: rgb(42, 56, 17);
+  border: rgb(80, 105, 35) solid;
+  color: white;
+}
+
+/* ********** MENU-SIDE ********** */
+.menu-side {
+  grid-area: menu-side;
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px 0 0;
+  font-weight: bold;
+}
+
+.menu-side > * {
+  height: 45px;
+  padding: 12px 20px;
+}
+
+.menu-side__item:hover {
+  background: rgb(80, 105, 35);
+  margin: 0;
+}
+
+.menu-side__logo {
+  height: auto;
+  width: 100%;
+  padding: 0;
+  align-self: center;
+}
+
+/* ********** MENU-TOP ********** */
+
+.menu-top {
+  grid-area: menu-top;
+  margin: 0 0 20px 0;
+}
+
+/* ********** MAIL-SEARCH ********** */
+
+.mail-search {
+  grid-area: mail-search;
+}
+
+/* ********** MAIL-HEADER ********** */
+
+.mail-header {
+  grid-area: mail-header;
+}
+
+/* ********** MAIL-LIST ********** */
+
+.mail-list {
+  grid-area: mail-list;
+}
+
+/* ********** MAIL-CONTENT ********** */
+
+.mail-content {
+  grid-area: mail-content;
+}
+
+@media screen and (max-width: 800px) {
+  #main-client {
+    grid-template-columns: 150px 1fr 1fr;
   }
-
-/* main-client */
-
-#main-client{
-    display: grid;
-    grid-template-columns: 20% 30% 50%;
-    grid-auto-rows: minmax(100px, auto);
-    gap: 10px;
-    max-height: 94%;
-    max-width: 92%%;
-    margin: 3% 4%;
 }
-
-#main-client section{
-    background: yellow;
-    padding: 10px;
-}
-
-#main-client section:nth-child(even){
-    background: rgb(60, 255, 0);
-    padding: 10px;
-}
-
-/* left-menu */
-
-/* middle-mails-list */
-
-/* right-mail-content */
