@@ -44,7 +44,8 @@ body {
 #main-client section {
   /* background: rgb(126, 150, 67); */
   /* background: rgb(80, 105, 35); */
-  background: rgb(136, 148, 113);
+  /* background: rgb(136, 148, 113); */
+  background: rgb(170, 177, 159);
   border: rgb(55, 75, 20) solid;
 }
 
@@ -117,7 +118,7 @@ body {
 }
 
 .menu-top__item--left input{
-  background: rgb(136, 148, 113);
+  background: rgb(170, 177, 159);
   border: rgb(55, 75, 20);
   font-size: 14px;
   height: 29px;
