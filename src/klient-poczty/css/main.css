@@ -24,16 +24,19 @@ body {
 
 #main-client {
   display: grid;
-  grid-template-columns: 200px 1fr 1fr;
+  grid-template-columns: 200px 1fr 2fr;
   /* grid-auto-rows: minmax(100px, auto); */
-  grid-auto-rows: 85px 65px 1fr;
+  grid-auto-rows: 85px 65px 65px 65px 1fr;
   grid-template-areas:
     "menu-side menu-top menu-top"
-    "menu-side mail-search mail-header"
+    "menu-side mail-menu mail-menu"
+    "menu-side mail-list mail-header"
+    "menu-side mail-list mail-header"
     "menu-side mail-list mail-content";
   padding: 60px 80px;
-  opacity: 0.87;
-  min-height: 550px;
+  opacity: 0.9;
+  min-height: 570px;
+  min-width: 970px;
   height: 100vh;
   width: 100vw;
 }
@@ -61,7 +64,7 @@ body {
 
 .menu-side > * {
   position: relative;
-  height: 45px;
+  height: 40px;
   padding: 5px 0 5px 10px;
 }
 
@@ -95,7 +98,6 @@ body {
 .menu-top {
   grid-area: menu-top;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-content: center;
   margin: 0 0 20px 0;
@@ -104,27 +106,35 @@ body {
 .menu-top__item--left,
 .menu-top__item--right {
   display: flex;
-  flex-wrap: wrap;
-  min-width: 400px;
-  font-size: 12px;
+  flex: 1 1 0;
 }
 
 .menu-top__item--left {
-  justify-content: flex-start;
-}
-.menu-top__item--right {
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
-.menu-top__item--left > *,
+.menu-top__item--left input{
+  background: rgb(80, 105, 35);
+  border: rgb(55, 75, 20);
+  color: white;
+  font-size: 14px;
+  height: 29px;
+  width: 100%;
+}
+
+.menu-top__item--right {
+  justify-content: flex-end;
+  font-size: 12px;
+}
+
 .menu-top__item--right > * {
   position: relative;
   height: 59px;
-  width: 95px;
+  width: 100px;
 }
 
-
-.menu-top__item--left img,
 .menu-top__item--right img {
   position: absolute;
   height: 20px;
@@ -133,40 +143,68 @@ body {
   left: 37.5px;
 }
 
-.menu-top__item--left p,
 .menu-top__item--right p {
   text-align: center;
   padding-top: 37px;
-
 }
 
-.menu-top__item--left > *:hover,
 .menu-top__item--right > *:hover {
   background: rgb(80, 105, 35);
 }
 
-/* ********** MAIL-SEARCH ********** */
+/* ********** MAIL-MENU ********** */
 
-.mail-search {
-  grid-area: mail-search;
+.mail-menu {
+  grid-area: mail-menu;
+  display: flex;
+  align-content: center;
+  justify-content: flex-start;
+  /* margin: 0 10px 0 0; */
+  font-size: 12px;
+}
+
+.mail-menu > * {
+  position: relative;
+  height: 59px;
+  width: 100px;
+}
+
+.mail-menu__item img {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  top: 8px;
+  left: 37.5px;
+}
+
+.mail-menu__item p {
+  text-align: center;
+  padding-top: 37px;
+}
+
+.mail-menu__item:hover {
+  background: rgb(55, 75, 20);
 }
 
 /* ********** MAIL-HEADER ********** */
 
 .mail-header {
   grid-area: mail-header;
+  /* margin: 0 0 0 10px; */
 }
 
 /* ********** MAIL-LIST ********** */
 
 .mail-list {
   grid-area: mail-list;
+  /* margin: 0 10px 0 0; */
 }
 
 /* ********** MAIL-CONTENT ********** */
 
 .mail-content {
   grid-area: mail-content;
+  /* margin: 0 0 0 10px; */
 }
 
 @media screen and (max-width: 800px) {

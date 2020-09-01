@@ -13,7 +13,7 @@
 
     <main id="main-client">
       <section class="menu-side">
-        <img class="menu-side__logo" src="img/logo-white.png" alt="logo" />
+        <img class="menu-side__logo" src="img/logo.png" alt="logo" />
         <div class="menu-side__item">
           <img src="img/inbox.svg" />
           <p>Inbox</p>
@@ -38,28 +38,16 @@
           <img src="img/trash.svg" />
           <p>Trash</p>
         </div>
+        <div class="menu-side__item">
+            <img src="img/folders.svg" />
+            <p>Folders</p>
+        </div>
       </section>
 
       <section class="menu-top">
-        <div class="menu-top__item--left">
-          <div>
-            <img src="img/trash.svg" />
-            <p>Mark as read</p>
-          </div>
-          <div>
-            <img src="img/trash.svg" />
-            <p>Mark as unread</p>
-          </div>
-          <div>
-            <img src="img/trash.svg" />
-            <p>Move to trash</p>
-          </div>
-          <div>
-            <img src="img/trash.svg" />
-            <p>Login</p>
-          </div>
-        </div>
-
+        <form class="menu-top__item--left">
+          <input type="search" placeholder="Search messages" />
+        </form>
         <div class="menu-top__item--right">
           <div>
             <img src="img/settings.svg" />
@@ -80,9 +68,33 @@
         </div>
       </section>
 
-      <section class="mail-search">
-        <p>mail-search</p>
+      <section class="mail-menu">
+        <div class="mail-menu__item">
+          <img src="img/mark-as-read.svg" />
+          <p>Mark as read</p>
+        </div>
+        <div class="mail-menu__item">
+          <img src="img/mark-as-unread.svg" />
+          <p>Mark as unread</p>
+        </div>
+        <div class="mail-menu__item">
+          <img src="img/move-to-trash.svg" />
+          <p>Move to trash</p>
+        </div>
+        <div class="mail-menu__item">
+          <img src="img/move-to-archive.svg" />
+          <p>Move to archive</p>
+        </div>
+        <div class="mail-menu__item">
+          <img src="img/move-to-spam.svg" />
+          <p>Move to spam</p>
+        </div>
+        <div class="mail-menu__item">
+          <img src="img/move-to-folder.svg" />
+          <p>Move to folder</p>
+        </div>
       </section>
+
       <section class="mail-header">
         <p>mail-header</p>
       </section>
