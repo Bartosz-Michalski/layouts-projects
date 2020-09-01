@@ -17,7 +17,7 @@ body {
   left: 0px;
   top: 0px;
   z-index: 0;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 /* ********** MAIN-CLIENT ********** */
@@ -34,7 +34,7 @@ body {
     "menu-side mail-list mail-header"
     "menu-side mail-list mail-content";
   padding: 60px 80px;
-  opacity: 0.93;
+  opacity: 0.95;
   min-height: 570px;
   min-width: 970px;
   height: 100vh;
@@ -43,7 +43,8 @@ body {
 
 #main-client section {
   /* background: rgb(126, 150, 67); */
-  background: rgb(80, 105, 35);
+  /* background: rgb(80, 105, 35); */
+  background: rgb(136, 148, 113);
   border: rgb(55, 75, 20) solid;
 }
 
@@ -116,12 +117,11 @@ body {
 }
 
 .menu-top__item--left input{
-  background: rgb(80, 105, 35);
+  background: rgb(136, 148, 113);
   border: rgb(55, 75, 20);
-  color: white;
   font-size: 14px;
   height: 29px;
-  width: 63%;
+  width: 64%;
   margin-left: 15px;
 }
 
@@ -184,7 +184,7 @@ body {
 }
 
 .mail-menu__item:hover {
-  background: rgb(55, 75, 20);
+  background: rgb(80, 105, 35);
 }
 
 /* ********** MAIL-HEADER ********** */
