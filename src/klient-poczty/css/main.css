@@ -1,3 +1,12 @@
+/* ********** VARIABLES ********** */
+:root {
+  --color-background-light-green: rgb(229, 235, 217);
+  --color-background-green: rgb(36, 49, 14);
+  --color-border: rgb(55, 75, 20);
+  --color-background-green-hover: rgb(95, 119, 49);
+}
+
+/* ********** OTHER SETTINGS ********** */
 * {
   font-family: Verdana, sans-serif;
   box-sizing: border-box;
@@ -17,7 +26,7 @@ body {
   left: 0px;
   top: 0px;
   z-index: 0;
-  opacity: 0.8;
+  opacity: 0.8;S
 }
 
 /* ********** MAIN-CLIENT ********** */
@@ -34,26 +43,23 @@ body {
     "menu-side mail-list mail-header"
     "menu-side mail-list mail-content";
   padding: 60px 80px;
-  opacity: 0.95;
+  opacity: 0.92;
   min-height: 570px;
-  min-width: 970px;
+  min-width: 880px;
   height: 100vh;
   width: 100vw;
 }
 
 #main-client section {
-  /* background: rgb(126, 150, 67); */
-  /* background: rgb(80, 105, 35); */
-  /* background: rgb(136, 148, 113); */
-  background: rgb(170, 177, 159);
-  border: rgb(55, 75, 20) solid;
+  background: var(--color-background-light-green);
+  border: var(--color-border) solid 1px;
+  border-radius: 10px;
 }
 
 #main-client .menu-side,
 #main-client .menu-top {
-  background: rgb(36, 49, 14);
-  border: rgb(55, 75, 20) solid;
-  color: white;
+  background: var(--color-background-green);
+  color: rgb(255, 255, 255);
 }
 
 /* ********** MENU-SIDE ********** */
@@ -92,7 +98,7 @@ body {
 }
 
 .menu-side__item:hover {
-  background: rgb(80, 105, 35);
+  background: var(--color-background-green-hover);
 }
 
 /* ********** MENU-TOP ********** */
@@ -118,8 +124,9 @@ body {
 }
 
 .menu-top__item--left input{
-  background: rgb(170, 177, 159);
-  border: rgb(55, 75, 20);
+  background: var(--color-background-light-green);
+  border: var(--color-border);
+  border-radius: 10px;
   font-size: 14px;
   height: 29px;
   width: 64%;
@@ -133,7 +140,7 @@ body {
 
 .menu-top__item--right > * {
   position: relative;
-  height: 59px;
+  height: 62px;
   width: 100px;
 }
 
@@ -141,7 +148,7 @@ body {
   position: absolute;
   height: 20px;
   width: 20px;
-  top: 8px;
+  top: 9px;
   left: 37.5px;
 }
 
@@ -151,7 +158,7 @@ body {
 }
 
 .menu-top__item--right > *:hover {
-  background: rgb(80, 105, 35);
+  background: var(--color-background-green-hover);
 }
 
 /* ********** MAIL-MENU ********** */
@@ -161,22 +168,22 @@ body {
   display: flex;
   align-content: center;
   justify-content: flex-start;
-  /* margin: 0 10px 0 0; */
-  font-size: 12px;
+  margin: 0 0 3px 0;
+  font-size: 10px;
 }
 
 .mail-menu > * {
   position: relative;
-  height: 59px;
-  width: 100px;
+  height: 60px;
+  width: 85px;
 }
 
 .mail-menu__item img {
   position: absolute;
-  height: 20px;
-  width: 20px;
-  top: 8px;
-  left: 37.5px;
+  height: 17px;
+  width: 17px;
+  top: 11px;
+  left: 34px;
 }
 
 .mail-menu__item p {
@@ -185,28 +192,47 @@ body {
 }
 
 .mail-menu__item:hover {
-  background: rgb(80, 105, 35);
-}
-
-/* ********** MAIL-HEADER ********** */
-
-.mail-header {
-  grid-area: mail-header;
-  /* margin: 0 0 0 10px; */
+  background: var(--color-background-green-hover);
 }
 
 /* ********** MAIL-LIST ********** */
 
 .mail-list {
   grid-area: mail-list;
-  /* margin: 0 10px 0 0; */
+}
+
+.mail-list__item {
+  /* position: relative; */
+  border-bottom: var(--color-border) solid 1px;
+  min-height: 71px;
+  padding: 15px 10px;
+}
+
+.mail-list__item--input {
+  float: left;
+}
+
+.mail-list__item--header {
+  font-size: 15px;
+  padding-left: 30px;
+}
+
+.mail-list__item--author {
+  font-size: 13px;
+  padding: 5px 0 0 30px;
+}
+/* ********** MAIL-HEADER ********** */
+
+.mail-header {
+  grid-area: mail-header;
+  margin: 0 0 3px 3px;
 }
 
 /* ********** MAIL-CONTENT ********** */
 
 .mail-content {
   grid-area: mail-content;
-  /* margin: 0 0 0 10px; */
+  margin: 0 0 0 3px;
 }
 
 @media screen and (max-width: 800px) {
@@ -214,4 +240,3 @@ body {
     grid-template-columns: 150px 1fr 1fr;
   }
 }
-<div class="menu-top__right--item">
