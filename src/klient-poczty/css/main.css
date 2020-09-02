@@ -26,7 +26,7 @@ body {
   left: 0px;
   top: 0px;
   z-index: 0;
-  opacity: 0.8;S
+  opacity: 0.8;
 }
 
 /* ********** MAIN-CLIENT ********** */
@@ -73,7 +73,7 @@ body {
 .menu-side > * {
   position: relative;
   height: 40px;
-  padding: 5px 0 5px 10px;
+  padding: 5px;
 }
 
 .menu-side__logo {
@@ -86,7 +86,7 @@ body {
 .menu-side__item img {
   position: absolute;
   top: 10px;
-  left: 10px;
+  left: 15px;
   height: 20px;
   width: 20px;
 }
@@ -94,7 +94,7 @@ body {
 .menu-side__item p {
   position: absolute;
   top: 13px;
-  left: 40px;
+  left: 50px;
 }
 
 .menu-side__item:hover {
@@ -141,7 +141,7 @@ body {
 .menu-top__item--right > * {
   position: relative;
   height: 62px;
-  width: 100px;
+  width: 90px;
 }
 
 .menu-top__item--right img {
@@ -149,7 +149,7 @@ body {
   height: 20px;
   width: 20px;
   top: 9px;
-  left: 37.5px;
+  left: 35px;
 }
 
 .menu-top__item--right p {
@@ -275,7 +275,7 @@ body {
   
 }
 
-.article__greeting, .article__matter {
+.article__greeting, .article__matter, .article__sign {
   font-weight: normal;
   font-size: 16px;
   padding: 20px 0;
