@@ -45,7 +45,7 @@ body {
   padding: 60px 80px;
   opacity: 0.92;
   min-height: 570px;
-  min-width: 880px;
+  min-width: 1060px;
   height: 100vh;
   width: 100vw;
 }
@@ -79,7 +79,7 @@ body {
 .menu-side__logo {
   height: auto;
   width: 100%;
-  padding: 0 14px 14px 14px;
+  padding: 10px 14px 14px 14px;
   align-self: center;
 }
 
@@ -167,15 +167,22 @@ body {
   grid-area: mail-menu;
   display: flex;
   align-content: center;
-  justify-content: flex-start;
-  margin: 0 0 3px 0;
+  position: relative;
+  margin: 0 0 5px 0;
+  padding-left: 10px;
   font-size: 10px;
 }
 
-.mail-menu > * {
+.mail-menu div {
   position: relative;
   height: 60px;
   width: 85px;
+}
+
+.mail-menu_input {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .mail-menu__item img {
@@ -184,6 +191,10 @@ body {
   width: 17px;
   top: 11px;
   left: 34px;
+}
+
+.mail-menu__item:nth-child(2){
+  margin-left: 21px;
 }
 
 .mail-menu__item p {
@@ -202,37 +213,73 @@ body {
 }
 
 .mail-list__item {
-  /* position: relative; */
+  position: relative;
   border-bottom: var(--color-border) solid 1px;
   min-height: 71px;
   padding: 15px 10px;
 }
 
 .mail-list__item--input {
-  float: left;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .mail-list__item--header {
-  font-size: 15px;
+  font-size: 14px;
   padding-left: 30px;
 }
 
 .mail-list__item--author {
-  font-size: 13px;
+  font-size: 12px;
   padding: 5px 0 0 30px;
 }
 /* ********** MAIL-HEADER ********** */
 
 .mail-header {
   grid-area: mail-header;
-  margin: 0 0 3px 3px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 5px 5px;
+  padding: 15px 15px;
+}
+
+.author {
+  display: flex;
+}
+
+.author__image--size {
+  height: 93px;
+  width: 85px;
+  border-radius: 10px;
+}
+
+.author__details {
+  padding-left: 15px;
+}
+.author__details--from, .date {
+  font-size: 14px;
+}
+
+.author__details--title {
+  font-size: 21px;
+  padding-top: 15px;
 }
 
 /* ********** MAIL-CONTENT ********** */
 
 .mail-content {
   grid-area: mail-content;
-  margin: 0 0 0 3px;
+  margin: 0 0 0 5px;
+  padding: 15px;
+  
+}
+
+.article__greeting, .article__matter {
+  font-weight: normal;
+  font-size: 16px;
+  padding: 20px 0;
+
 }
 
 @media screen and (max-width: 800px) {

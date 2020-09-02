@@ -69,6 +69,7 @@
       </section>
 
       <section class="mail-menu">
+        <input class="mail-menu_input" type="checkbox"></input>
         <div class="mail-menu__item">
           <img src="img/mark-as-read.svg" />
           <p>Mark as read</p>
@@ -98,34 +99,44 @@
       <section class="mail-list">
         <div class="mail-list__item">
           <input class="mail-list__item--input" type="checkbox"></input>
-          <h1 class="mail-list__item--header">Welcome to the YgdrasilMail</h1>
+          <h3 class="mail-list__item--header">Welcome to the YgdrasilMail</h1>
           <p class="mail-list__item--author">YgdrasilMail</p>
         </div>
         <div class="mail-list__item">
           <input class="mail-list__item--input" type="checkbox"></input>
-          <h1 class="mail-list__item--header">How to use the YgdrasilMail?</h1>
-          <p class="mail-list__item--author">YgdrasilMail</p>
+          <h3 class="mail-list__item--header">The conquest of Wessex</h1>
+          <p class="mail-list__item--author">Ragnar Lodbrok</p>
         </div>
       </section>
 
       <section class="mail-header">
-        <p>mail-header</p>
+
+        <div class="mail-header__item author">
+          <div class="author__image">
+            <img class="author__image--size" src="img/mail-author-image.jpeg">
+          </div>
+          <div class="author__details">
+            <p class="author__details--from">From: <strong>Ragnar Lodbrok</strong></p>
+            <h1 class="author__details--title">The conquest of Wessex</h1>
+          </div>
+        </div>
+        
+        <div class="mail-header__item date">
+          <p>20 October 870</p>
+          <p>3:12 PM</p>
+        </div>
+      
       </section>
 
       <section class="mail-content">
-        <p>mail-content</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Necessitatibus itaque temporibus magnam quos vero nemo cupiditate
-          quidem, unde, perspiciatis laudantium fugiat ex aspernatur. Accusamus
-          eum ratione ducimus maxime, sapiente cumque.lore Lorem ipsum dolor sit
-          amet consectetur adipisicing elit. Aperiam accusantium id culpa sit
-          numquam tenetur a fuga. Fugiat ratione eligendi quidem at amet id hic,
-          blanditiis, obcaecati veniam maiores facilis! Lorem ipsum dolor sit
-          amet consectetur adipisicing elit. Quod quisquam quibusdam reiciendis
-          magnam ad, eius cum quos consequuntur doloribus amet reprehenderit
-          molestiae. Vitae dolorem ducimus unde doloremque maiores non placeat.
+        <article class="mail-content__article">
+        <h2 class="article__greeting">
+          Heil og sæl!
+        </h2>
+        <p class="article__matter">
+          I have heard of a wonderful island far over the water. Legend has it, that the rich kingdom of Wessex is located there. Soon, before the snowfall, together with all our brothers in arms, we are going to conquer it. I feel deeply that this is our destiny. Don't wait with the decission! Join and support us on this journey!
         </p>
+      </article>
       </section>
     </main>
   </body>
