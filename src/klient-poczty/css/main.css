@@ -372,6 +372,11 @@ body {
     left: 10px;
   }
 
+  .mail-menu__item:nth-child(2) {
+    margin: 0;
+  }
+  
+
   /* ********** MAIL-HEADER ********** */
 
   .mail-header {
