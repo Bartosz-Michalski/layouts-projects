@@ -373,7 +373,7 @@ body {
   }
 
   .mail-menu__item:nth-child(2) {
-    margin: 0;
+    margin-left: 12px;
   }
   
 
